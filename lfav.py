@@ -116,14 +116,14 @@ class Unit:
                 print(statGrowth + " GROWTH!")
                 if self.current[statGrowth] == self.cap[statGrowth]:
                     print("Capped " + statGrowth + "!")
-            if randomNum <= self.growth [statGrowth] and self.current[statGrowth] == self.cap[statGrowth]:
+            elif randomNum <= self.growth [statGrowth] and self.current[statGrowth] == self.cap[statGrowth]:
                 print("OVER " + statGrowth + "!")
         print("Starting Base Stats:")
         self.printCurrentNCap()
         for i in range(1, levels + 1):
             print("Level Simulation: " + str(i))
             self.current['LVL'] = self.current['LVL'] + 1
-            for i in range(0, len(STATS)):
+            for i in range(1, len(STATS)):
                 helpGrow(STATS[i])
         print("\n======================================")
         print("Final Level Up:")
