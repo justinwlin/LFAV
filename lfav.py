@@ -33,7 +33,7 @@ class Unit:
         '''
         #Weapon Adding to Attack:
         self.attack = self.base["STR"]
-        self.accuracy = .5 * self.base["SPD"] + 2 * self.base["SKL"]
+        self.accuracy = self.base["SPD"] + 2 * self.base["SKL"]
         self.avoid = self.base["LCK"] + .5 * self.base["SKL"]
         self.crit = .5 * self.base["SKL"]
         self.dodge = 2 * self.base["SPD"] + .5 * self.base["SKL"] + .5 * self.base["LCK"]
@@ -46,12 +46,14 @@ class Unit:
         print("DODGE" + ": " + str(self.dodge))
 
     def battleStatWeapon(self, weaponChoice):
+        #Resetting to Base stats
         self.attack = self.base["STR"]
-        self.accuracy = .5 * self.base["SPD"] + 2 * self.base["SKL"]
+        self.accuracy = self.base["SPD"] + 2 * self.base["SKL"]
         self.avoid = self.base["LCK"] + .5 * self.base["SKL"]
         self.crit = .5 * self.base["SKL"]
         self.dodge = 2 * self.base["SPD"] + .5 * self.base["SKL"] + .5 * self.base["LCK"]
 
+        #With Weapons
         self.equipped_weapon = weaponChoice
         if(self.equipped_weapon == "iron"):
             self.attack = self.attack + 6
@@ -64,12 +66,15 @@ class Unit:
             self.attack = self.attack
     
     def battleStatCustom(self, might, accuracy):
+
+        #Base
         self.attack = self.base["STR"]
-        self.accuracy = .5 * self.base["SPD"] + 2 * self.base["SKL"]
+        self.accuracy = self.base["SPD"] + 2 * self.base["SKL"]
         self.avoid = self.base["LCK"] + .5 * self.base["SKL"]
         self.crit = .5 * self.base["SKL"]
         self.dodge = 2 * self.base["SPD"] + .5 * self.base["SKL"] + .5 * self.base["LCK"]
 
+        #With Weapon
         self.attack = self.attack + might
         self.accuracy = self.accuracy + accuracy
 
@@ -153,14 +158,18 @@ def battle_(unit1, unit2):
     unit1Accuracy = unit1.accuracy - unit2.dodge
     unit1Crit = unit1.crit - unit2.avoid
     crit = False
-    if(unit1Accuracy <= random.randint(1, 100)):
+    if(unit1Accuracy >= random.randint(1, 100)): #Testing if unit gets hit
         print(unit1.getName() + " has hit " + unit2.getName())
-        if(unit1Crit <= random.randint(1, 100)):
+        #Testing Crit
+        if(unit1Crit >= random.randint(1, 100)):
             print(unit1.getName() + " has crit " + unit2.getName() + "!!!")
             crit = True
+        #Damage Dealt
         damage = unit1.attack - unit2.current["DEF"]
+        #If Crit *3 to damage. 
         if(crit):
             damage = damage * 3
+        #Subtracting Health
         unit2.current["HP"] = unit2.current["HP"] - damage
 
         if(unit2.current["HP"] < 0):
@@ -257,8 +266,7 @@ def battleSimulate(unit1, unit2):
             print(attackerName + " is attacking " + defenderName)
             print("What weapon do you want the attacker to use?")
             weaponSelect(attackerUnit)
-            print("What weapon do you want the defender to use?")
-            weaponSelect(defenseUnit)
+
             unit1Turn = not unit1Turn
 
             print("Stat of Current Unit")
