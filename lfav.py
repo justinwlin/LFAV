@@ -269,7 +269,7 @@ def battleSimulate(unit1, unit2):
     storedUnit2 = 0
 
     while(battle):
-        print("[1] Heal [2] Quit; Press [Enter] to continue normally")
+        print("[1] Heal [2] Quit; [3] Continue")
         option = int(input())
         if(option == 1):
             print("Which unit would you like to heal?")
@@ -300,7 +300,7 @@ def battleSimulate(unit1, unit2):
             
         elif(option == 2):
             break;
-        else:
+        elif(option == 3):
             print("ONTO BATTLE!")
         
         if(unit1.current["HP"] <= 0 and unit2.current["HP"] <= 0):
