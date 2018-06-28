@@ -1,0 +1,128 @@
+Abattre,axe,75,16,5,25
+Acinaces,knife,85,15,10,17
+Anaspell,magic,80,10,0,10
+Arbalest,bow,75,15,5,25
+Arcspell,magic,75,16,0,15
+Armorslayer,sword,80,10,5,15
+Arquus,bow,75,19,10,23
+Atlatl,lance,80,15,5,23
+Aura,magic,65,14,0,18
+Aureola,magic,70,15,5,18
+Axereaver,lance,80,10,0,15
+Barrage,magic,50,6,0,12
+Baselard,knife,90,15,20,17
+Blight,magic,75,7,5,10
+Brave Axe,axe,65,11,0,25
+Brave Bow,bow,65,10,5,24
+Brave Dagger,knife,75,6,10,17
+Brave Lance,lance,70,10,0,23
+Brave Sword,sword,75,9,5,22
+Bravespell,magic,70,10,0,18
+Bronze Axe,axe,85,5,-99,7
+Bronze Bow,bow,85,4,-99,7
+Bronze Dagger,knife,85,2,-99,2
+Bronze Lance,lance,90,4,-99,6
+Bronze Sword,sword,95,3,-99,5
+Caliberd,lance,85,20,10,20
+Crossbow,bow,65,12,5,18
+Dirk,knife,70,8,25,8
+Dispell,magic,75,7,15,3
+Double Bow,bow,80,19,10,28
+Endspell,magic,75,12,15,12
+Ensis,sword,90,18,10,25
+Exspell,magic,75,11,5,5
+Faucharde,lance,85,18,5,23
+Fenspell,magic,90,5,-99,1
+Fortify,staff,100,3,0,20
+Glimmer,magic,80,11,0,10
+Hammer,axe,70,12,0,20
+Hand Axe,axe,55,7,0,12
+Heal,staff,100,0,0,2
+Heavy Spear,lance,75,11,0,18
+Illustris,magic,85,20,5,25
+Iron Axe,axe,80,7,0,10
+Iron Blade,sword,80,8,5,10
+Iron Bow,bow,80,6,0,9
+Iron Dagger,knife,80,3,10,2
+Iron Knife,knife,60,4,5,5
+Iron Lance,lance,85,6,0,8
+Iron Longbow,bow,55,6,0,11
+Iron Shortbow,bow,55,6,0,12
+Iron Sword,sword,90,5,5,7
+Javelin,lance,60,6,0,10
+Kard,knife,80,8,10,10
+Kastane,sword,85,13,10,15
+Killer Axe,axe,60,12,15,17
+Killer Bow,bow,60,11,15,16
+Killer Lance,lance,65,11,15,15
+Killing Edge,sword,70,10,20,13
+Kontari,lance,80,18,10,22
+Labrys,axe,85,15,5,18
+Lancereaver,sword,70,12,5,20
+Lepida,sword,85,18,5,22
+Lobera,sword,85,17,10,20
+Long Dagger,knife,80,10,5,7
+Longsword,sword,80,10,5,15
+Lumina,magic,55,10,0,15
+Mend,staff,100,1,0,3
+Nimravus,knife,85,17,20,20
+Paralysis Bow,bow,75,6,5,14
+Paralysis Knife,knife,80,3,10,10
+Peshkatz,knife,85,12,5,18
+Physic,staff,100,2,0,10
+Poison Bow,bow,70,7,5,14
+Poison Dagger,knife,80,5,10,8
+Poison Knife,knife,75,4,10,10
+Poleaxe,axe,70,12,0,20
+Reaver Bow,bow,75,10,0,17
+Recourbe,bow,75,18,0,24
+Recover,staff,100,3,0,15
+Rectify,staff,100,2,0,18
+Regal Lance,lance,80,13,5,17
+Restore,staff,100,1,0,7
+Revitalize,staff,100,5,0,30
+Rexspell,magic,80,18,0,17
+Ridersbane,lance,75,11,0,18
+Royal Sword,sword,85,12,10,15
+Runesword,sword,80,13,5,20
+Sagaris,axe,75,20,10,23
+Sagittis,bow,85,17,5,20
+Sedation,magic,85,5,5,10
+Seure,sword,95,17,5,22
+Shine,magic,80,11,0,10
+Short Axe,axe,65,12,0,20
+Short Spear,lance,70,11,0,18
+Silencer,bow,70,14,5,23
+Sleep,staff,70,3,0,8
+Sleep Dagger,knife,85,4,10,8
+Slim Axe,axe,65,7,10,8
+Slim Bow,bow,65,6,10,7
+Slim Dagger,knife,75,4,20,3
+Slim Lance,lance,70,6,10,7
+Slim Sword,sword,75,5,15,5
+Solais,sword,90,17,10,18
+Spear,lance,75,14,0,21
+Spell,magic,85,6,0,2
+Spellbind,staff,70,3,0,8
+Steel Axe,axe,70,12,0,15
+Steel Blade,sword,75,13,5,17
+Steel Bow,bow,70,11,0,14
+Steel Dagger,knife,80,8,10,7
+Steel Knife,knife,70,8,5,10
+Steel Lance,lance,75,11,0,13
+Steel Longbow,bow,65,11,0,19
+Steel Shortbow,bow,65,11,0,20
+Steel Sword,sword,80,10,5,12
+Sterling Axe,axe,70,17,0,23
+Sterling Blade,sword,70,17,5,25
+Sterling Bow,bow,70,16,0,22
+Sterling Dagger,knife,80,12,10,15
+Sterling Knife,knife,80,10,5,15
+Sterling Lance,lance,75,16,0,21
+Sterling Sword,sword,80,15,5,20
+Stiletto,knife,85,13,20,17
+Swordreaver,axe,75,11,0,18
+Tenebrois,sword,75,20,25,0
+Tomahawk,axe,70,15,0,23
+Wishlance,lance,85,19,5,27
+Worlaxe,axe,80,20,5,28
