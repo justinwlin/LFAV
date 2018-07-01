@@ -93,7 +93,7 @@ class Unit:
     
     def getDisadv(self):
         self.attack -= 1
-        self.accuracy += 15
+        self.accuracy -= 15
         print()
         print("Weapon disadvantage!")
         print(self.name)
@@ -119,7 +119,7 @@ class Unit:
         #Check the weapon List if it exists
         inweaponDic = False
         canWield = False
-        while(not inweaponDic and not canWield):
+        while(not inweaponDic or not canWield):
             userInput = input()
             if userInput in weaponDic:
                     inweaponDic = True
@@ -132,7 +132,8 @@ class Unit:
                                 print(self.weapon.name + " successfully equipped." )
                                 break
                             else:
-                                print(self.name + "cannot wield that weapon.")
+                                print(self.name + " cannot wield that weapon.")
+                                break
             else:
                 print("The weapon cannot be found.")
         #update Stats
@@ -397,7 +398,7 @@ def damageCalculation(unit1, unit2, checkForKnifeAdv):
     else:
         print("Attack missed!")
     
-        '''
+    '''
     ==================
     Reset Stats
     ==================
@@ -588,14 +589,20 @@ def menu():
 def battleSimulationMenu():
     #Selecting First Unit
     print("Select unit to initiate battle:")
-    userInput = input()
-    unit1 = searchForUnit(unitList, userInput)
+    controlLoop = False
+    while(not controlLoop):
+        userInput = input()
+        unit1 = searchForUnit(unitList, userInput)
+        if(unit1 != "Error"):
+            controlLoop = True
     #Select Second Unit
-    print("Select unit to attack:")
-    userInput = input()
-    unit2 = searchForUnit(unitList, userInput)
+    controlLoop = False
+    while(not controlLoop):
+        userInput = input()
+        unit2 = searchForUnit(unitList, userInput)
+        if(unit2 != "Error"):
+            controlLoop = True
     battle(unit1, unit2)
-
 
 #=================
 # Inits / Main
