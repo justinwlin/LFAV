@@ -445,13 +445,13 @@ Helper Functions
 '''
 def listingUnit():
     for unit in unitList:
-        print(unit.getName(), end="; ")
+        print(unit.getName() + "; ")
     print()
     print("====================")
 
 def listingWeapon():
     for weapon in weaponDic:
-        print(weapon.name, end="; ")
+        print(weapon.name + "; ")
     print()
     print("====================")
 
@@ -609,12 +609,12 @@ def battleSimulationMenu():
 #=================
 def initFile():
     # Initializes the file
-    with open('stats.csv - finished.csv') as csvfile:
+    with open('statsfinished.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
             tempUnit = Unit(row)
             unitList.append(tempUnit)
-    with open('stats.csv - weapons.csv') as csvfile:
+    with open('statsweapons.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
         for row in readCSV:
             tempWeapon = Weapon(row)
