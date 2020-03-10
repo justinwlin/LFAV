@@ -190,8 +190,8 @@ class Unit:
         print("HP:       " + str(self.current["HP"]) + "/" + str(self.base["HP"]))
         print("Dodge:    " + str(self.dodge))
         print("Avoid:    " + str(self.avoid) + "\n")
-        print("Defense:  " + str(self.current["Def"] + "\n"))
-        print("Res:      " + str(self.current["Res"] + "\n"))
+        print("Defense:  " + str(self.current["Def"]) + "\n")
+        print("Res:      " + str(self.current["Res"]) + "\n")
 
     def getName(self):
         return self.name
